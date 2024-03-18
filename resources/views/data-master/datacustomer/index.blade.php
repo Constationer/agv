@@ -32,7 +32,7 @@
                                 <div class="col-8">
                                     <div class="card-body p-4">
                                         <h5 class="mb-2 fw-normal mt-2 text-muted">DETAIL INFORMATION</h5>
-                                        <h6 class="mb-0 fw-bold">Customer</h6>
+                                        <h6 class="mb-0 fw-bold">Data Customer</h6>
                                     </div>
                                 </div>
                             </div>
@@ -51,7 +51,7 @@
                             <div class="modal fade" id="newDataModal" tabindex="-1" aria-labelledby="newDataModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
+                                    <div class="modal-content rounded-modal-content">
                                         <div class="modal-header">
                                             <h4 class="modal-title text-primary" id="newDataModalLabel">Add New Customer
                                             </h4>

@@ -173,8 +173,8 @@
                     <ul class="slide-menu">
                         <li class="side-menu-label1"><a href="javascript:void(0)">Data Master</a></li>
                         <li><a href="{{ route('datacustomer.index') }}" class="slide-item"> Data Customer</a></li>
-                        <li><a href="cards.html" class="slide-item"> Data Currency</a></li>
-                        <li><a href="calendar.html" class="slide-item"> Account Data</a></li>
+                        <li><a href="{{ route('datacurrency.index') }}" class="slide-item"> Data Currency</a></li>
+                        <li><a href="{{ route('dataaccount.index') }}" class="slide-item"> Data Account</a></li>
                     </ul>
                 </li>
                 <li class="slide">

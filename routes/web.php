@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DataAccountController;
+use App\Http\Controllers\DataCurrenciesController;
 use App\Http\Controllers\DataCustomerController;
 use App\Http\Controllers\PettyCashController;
 use Illuminate\Support\Facades\Route;
@@ -32,5 +34,21 @@ Route::prefix('data-master')->group(
         Route::get('/pettycash/edit/{id}', [DataCustomerController::class, 'edit'])->name('pettycash.edit');
         Route::post('/pettycash/update/{id}', [DataCustomerController::class, 'update'])->name('pettycash.update');
         Route::delete('/pettycash/delete/{id}', [DataCustomerController::class, 'delete'])->name('pettycash.delete');
+
+        //Data Currency
+        Route::get('/currency', [DataCurrenciesController::class, 'index'])->name('datacurrency.index');
+        Route::get('/currency/getData', [DataCurrenciesController::class, 'getData'])->name('datacurrency.getData');
+        Route::post('/currency', [DataCurrenciesController::class, 'store'])->name('datacurrency.store');
+        Route::get('/currency/edit/{id}', [DataCurrenciesController::class, 'edit'])->name('datacurrency.edit');
+        Route::post('/currency/update/{id}', [DataCurrenciesController::class, 'update'])->name('datacurrency.update');
+        Route::delete('/currency/delete/{id}', [DataCurrenciesController::class, 'delete'])->name('datacurrency.delete');
+
+        //Data Account
+        Route::get('/account', [DataAccountController::class, 'index'])->name('dataaccount.index');
+        Route::get('/account/getData', [DataAccountController::class, 'getData'])->name('dataaccount.getData');
+        Route::post('/account', [DataAccountController::class, 'store'])->name('dataaccount.store');
+        Route::get('/account/edit/{id}', [DataAccountController::class, 'edit'])->name('dataaccount.edit');
+        Route::post('/account/update/{id}', [DataAccountController::class, 'update'])->name('dataaccount.update');
+        Route::delete('/account/delete/{id}', [DataAccountController::class, 'delete'])->name('dataaccount.delete');
     }
 );
